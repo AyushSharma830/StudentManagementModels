@@ -10,7 +10,7 @@ data class School(
 ) {
     constructor() : this(id = null, name = null, location = null, createdAt = null)
 
-//    override fun toString(): String {
-//        return GsonBuilder().serializeNulls().create().toJson(this)
-//    }
+    override fun toString(): String {
+        return GsonBuilder().serializeNulls().create().toJson(this)
+    }
 }
